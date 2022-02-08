@@ -1,0 +1,19 @@
+[{"id":1,"categoria":"BMX","modelo":"COLONY ECLIPSE","marca":"Colony Eclipse","rodado":26,"precio":560,"img":"Images/Bikes/BMX/Colony Eclipse 26.webp" },
+{"id":2,"categoria":"BMX","modelo":"SUNDAY MODEL C","marca":"Sunday","rodado":24,"precio":610,"img":"Images/Bikes/BMX/Sunday Model C 24.webp"},
+{"id":3,"categoria":"BMX","modelo":"SUNDAY HIGH C","marca":"Sunday","rodado":29,"precio":710,"img":"Images/Bikes/BMX/Sunday High C 29.webp"},
+
+{"id":6,"categoria":"Urbana","modelo":"CONOR SUNDAY","marca":"Conor","rodado":28,"precio":370,"img":"Images/Bikes/Urbanas/Bicicleta Conor Sunday 2021.jpeg"},
+{"id":7,"categoria":"Urbana","modelo":"MERIDA SPEEDER 100","marca":"Merida","rodado":32,"precio":590,"img":"Images/Bikes/Urbanas/Bicicleta Merida Crossway 100 2021.jpeg"},
+{"id":8,"categoria":"Urbana","modelo":"CONOR MALIBU MIXTA","marca":"Conor","rodado":26,"precio":390,"img":"Images/Bikes/Urbanas/Bicicleta Conor Malibu Mixta 2021.jpeg"},
+
+{"id":11,"categoria":"Plegable","modelo":"MEGAMO ZAMBRA","marca":"Zambra","rodado":20,"precio":280,"img":"Images/Bikes/Plegables/Bicicleta Megamo Zambra 2021.jpeg"},
+{"id":12,"categoria":"Plegable","modelo":"DAHON SUV D6","marca":"Dahon","rodado":20,"precio":430,"img":"Images/Bikes/Plegables/Dahon Suv D6.jpeg"},
+{"id":14,"categoria":"Plegable","modelo":"CONOR DENVER","marca":"Conor","rodado":20,"precio":490,"img":"Images/Bikes/Plegables/Conor Denver 2021.jpeg"},
+
+{"id":16,"categoria":"Carretera","modelo":"ALTRALIGHT EVO 8.0","marca":"Evo","rodado":28,"precio":5100,"img":"Images/Bikes/Carretera/ULTRALIGHT EVO 8.0.webp"},
+{"id":17,"categoria":"Carretera","modelo":"MMR BEAT 2021","marca":"MMR","rodado":32,"precio":2600,"img":"Images/Bikes/Carretera/Bicicleta MMR Beat 32.webp"},
+{"id":18,"categoria":"Carretera","modelo":"MERIDA SILEX 600 PLUS","marca":"Merida","rodado":32,"precio":3100,"img":"Images/Bikes/Carretera/Bicicleta Merida eSilex 600 Plus 2021.webp"},
+
+{"id":21,"categoria":"MTB","modelo":"CONOR 5500","marca":"Conor","rodado":29,"precio":290,"img":"Images/Bikes/MTB/Trek X-Caliber 7 2021.jpeg"},
+{"id":22,"categoria":"MTB","modelo":"MEGAMO NATURA 50","marca":"Megamo","rodado":29,"precio":500,"img":"Images/Bikes/MTB/Megamo Natural 50 2021.jpeg"},
+{"id":23,"categoria":"MTB","modelo":"CUBE AIM PRO","marca":"Cube","rodado":28,"precio":519,"img":"Images/Bikes/MTB/Cube Aim Pro 2021.jpeg"}]

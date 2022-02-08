@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    <title>NebulaBike</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <a href="#" id="icon_carrito"><img src="/Images/shopping-cart_icon-icons.com_60593.svg" alt="carrito"></a>
+            <div id="elementos_carrito"></div>
+            
+            <h1><a class="header__title" href="/index.html">NebulaBike</a></h1>
+            
+            <nav class="nav">
+                <ul class="menu">
+                    <a href="#"class="icon_menu"><img src="/Images/hamburguesa.webp" alt="menu"></a>
+                    <li><a href="#" class="menu__item" id="about_us">¿Quienes somos?</a></li>
+                    <li><a href="#" id="socialmedia" class="menu__item">Contacto</a></li>
+                    <li><a href="#" id="modal_iframe" class="menu__item">Donde estamos</a></li>
+                    <li><a href="#" class="menu__item" id='modal_promociones'>Promociones</a></li>
+                </ul> 
+                <div id="search-input" ><!--Genero dinamicamente el buscador en js --></div>    
+            </nav>   
+        </div>
+    </header>
+
+    <main class="tienda">
+        <section class="sct_filtros">
+            <div class="filtros__title">
+                <h2>FILTROS</h2>
+                <div class="line"></div>
+            </div>
+            <div class="filtros__contenedores">
+                    <h3>Categoria</h3>
+                    <select class="select-css" id="filtro__categoria"><!-- Se generan dinamicamente --></select>
+            </div>
+            <div class="filtros__contenedores">
+                <h3>Marca</h3>
+                <select class="select-css" id="filtros__marca" ><!-- Se generan dinamicamente --></select>
+            </div>
+            <div class="filtros__contenedores">
+                <h3>Precios maximo</h3>
+                    <select class="select-css" id="filtros__precios">
+                        <!-- Se generan dinamicamente --></select>
+                </div>
+            </div>
+            <div class="filtros__contenedores">
+                <h3>Rodado</h3>
+                <select class="select-css" id="filtros__rodado">    
+                    <!-- Se generan dinamicamente --> </select>
+            </div>
+            
+            <section class="modal__carrito">
+                <div></div>
+                <div id="sct_carrito">
+                    <h2>Mi Carrito<img class="icon_carrito" src="/Images/shopping-cart_icon-icons.com_60593.svg" alt="carrito"><button id="btn_closeCart" class="btn_closeCart">x</button></h2>
+                    <table class="detalle_producto">
+                        <thead>
+                        <tr>
+                            <td id='icon_carrito' >Resumen</td>
+                        </tr>
+                        </thead>
+                            <tr id="compra_usuario"><!-- Se genera por js el contenido del carrito--></tr>         
+                    </table>
+
+                    <table id="resumen_compra" class="resumen_compra">
+                        <tr>
+                            <td class="title_precio-subtotal">Subtotal</td>
+                            <td id="subtotal_price" class="subtotal_price"><!-- carga dinamica --></td>
+                        </tr>
+                        <tr>
+                            <td class="title_precio-descuento">Descuento</td>
+                            <td id="price_discount" class="price_discount"><!-- carga dinamica --></td>
+                        </tr>
+                        <tr>
+                            <td class="title_precio-total">TOTAL a pagar</td> 
+                            <td id="total_price" class="total_price"><!-- carga dinamica --></td>
+                        </tr>
+                    </table>
+                    <div id="botones_carrito" class="botones_carrito"><!-- Generados por js --> </div>
+                </div>
+            </section>   
+        </section>
+        
+        <section  class="sct_productos"> 
+            <div id="promos" class="promos">
+                <!-- Mensaje que aparece haciendo click en Promociones -->
+                <a id="close_promos" href="#">x</a>
+                <p>+ Para compras mayores a € 499 se aplica un descuento del 5%</p>
+                <p>+ Para compras mayores a € 999 se aplica un descuento del 10%</p>
+                <p>+ Para compras mayores a € 1999 se aplica un descuento del 20%</p>
+            </div>        
+            <div id="alert-cart" class="alert-primary" role="alert"><!-- por JS --></div>
+
+            <div id="listado_prd" class="listado_prd"> <!-- CREO GRILLA DE PRODUCTOS en forma dinamica--> </div> 
+        </section>
+        
+        <section class="modal" id="open_modal_location" >
+            <div class="modal__container">
+                    <h2 class="modal__title"> ¡Ven a visitarnos!</h2>
+                    <iframe class="modal__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.9782786716137!2d-0.37255718490618867!3d39.46981942060447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048b403142741%3A0x3f6ed88f142b9c7!2sCl.%20de%20Col%C3%B3n%2C%2060%2C%2046004%20Valencia%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sde!4v1643370010184!5m2!1ses!2sde" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></a>
+                    <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quas pariatur exercitationem recusandae obcaecati nobis, tempore fugiat cumque. Vero quis odio minus sint omnis. Adipisci facilis laborum quas? Eius, odio.</p>
+                    <a href="#" class="modal__close">Volver a la pagina</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer"> 
+        <div class="aboutUs">
+            <div class="aboutUs__container">
+                <p id="close_aboutUs">x</p>
+                <h2 class="title__aboutUs">SOBRE NOSOTROS</h2>
+                <p class="text_aboutUs">
+                    Somos una bicicletería ubicada en el el centro de Valencia, a pocos metros del mercado de Colón ,próximo a las estaciones del metro y de bus, contamos con amplia experiencia en el sector.
+                    Nos destacamos en la venta y asesoramiento para la adquisición de bicicletas y accesorios de las mejores marcas, como ademas en el buen servicio postventa, siendo representantes oficiales de CUBE, MERIDA, CONOR, MMR, SUNDAY, COLONY, MEGAMO, DAHON, EVO.
+                </p>
+            </div>
+        </div> 
+        <div class="contenedorcontacto">
+            <img id="btn_slideUp"src="/Images/upward-arrow.png" alt="upward">
+            <div id="socialmedia" class="redes">
+                <div class="socialmedia__title">
+                    <h2>CONTACTOS</h2>
+                </div>
+                <div class="redes_sociales">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="/Images/facebook.png" alt="Facebook" class="redes__sociales"></a>
+                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="/Images/instagram.png" alt="Instagram" class="redes__sociales"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="/Images/whatsapp.webp" alt="whatsapp" class="redes__sociales"></a>   
+                </div>    
+            </div>
+            <p>Todos los derechos reservados a Andrea M. Lorenzo | 2021</p>
+        </div>    
+    </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="/js/globales.js"></script>
+<script src="/js/prd.js"></script>
+<script src="/js/funciones.js"></script>
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>
+
+
